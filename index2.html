@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //求最大值
+//    function max(arr) {
+//        var maxNumber=arr[0];
+//        for(var i=1;i<arr.length;i++){
+//            if(maxNumber<arr[i]){
+//                maxNumber=arr[i]
+//            }
+//        }
+//        return maxNumber
+//    }
+//    console.log(max([5,7,3,6,898,334,22,55]))
+
+//    function max(){
+//        var maxNumber=arguments[0];
+//        for(var i=1;i<arguments.length;i++){
+//            if(maxNumber<arguments[i]){
+//                maxNumber=arguments[i]
+//            }
+//        }
+//        console.log(arguments)
+//        return maxNumber
+//
+//    }
+//    console.log(max(5,7,3,6,898,334,22,55))
+
+
+    //求和
+//    function add(arr){
+//        var sum=0;
+//        for(var i=0;i<arr.length;i++){
+//            sum+=arr[i]
+//        }
+//        return sum
+//    }
+//    console.log(add([3,6,4,2,1]))
+//    function add(){
+//        var sum=0;
+//        for(var i=0;i<arguments.length;i++){
+//            sum+=arguments[i]
+//        }
+//        return sum
+//    }
+//    console.log(add(3,5,3,42))
+//    function num(n){
+//        var sum=1;
+//        var sum1=1;
+//
+//        if(n==1 || n==2){
+//            console.log("1");
+//        }
+//        for(var i=3;i<=n;i++){
+//            var temp=sum1;
+//            sum1=sum1+sum;
+//            sum=temp
+//        }
+//        return sum1
+//    }
+//    console.log(num(6))
+
+
+//    function anew(arr){
+//        var newArr=[];
+//        for(var i=arr.length-1;i>=0;i--){
+//            newArr[newArr.length]=arr[i]
+//        }
+//        return newArr
+//    }
+
+
+    //排序
+//    function paixu(arr){
+//        for(var i=0;i<arr.length-1;i++){
+//            for(var j=0;j<arr.length-1-i;j++){
+//                if(arr[j]>arr[j+1]){
+//                    var temp=arr[j+1];
+//                    arr[j+1]=arr[j]
+//                    arr[j]=temp
+//                }
+//
+//            }
+//        }
+//        return arr
+//    }
+//    console.log(paixu([3,65,4,23,7,32,44]))
+
+
+    //年
+//    console.log(anew([44,14,3,5,1]))
+//     function years(year){
+//         if((year%4==0 && year%100!=0) || year%400==0){
+//             console.log("闰年")
+//         }else{
+//             console.log('平年')
+//         }
+//     }
+//    years(2000)
+    //第几天z
+//    function data(year,month,z){
+//        var days=0;
+//        var months=[31,29,31,30,31,30,31,31,30,31,30,31]
+//        if((year%4==0 && year%100!=0) || year%400==0){
+//            months[1]=28
+//        }
+//        for(var i=0;i<month-1;i++){
+//            days+=months[i]
+//        }
+//        days+=z
+//        return days
+//    }
+//    console.log(data(2015,3,2))
+
+    //对象
+//     var person={
+//         name:"leier",
+//         age: 18,
+//         sex: "nv",
+//         hobby:function(){
+//             console.log("上树")
+//         },
+//         strong:function(){
+//             console.log("游戏")
+//         }
+//     }
+//    console.log(person.name)
+//    person.hobby()
+
+
+//    var person=new Object()
+//    person.name="leier";
+//    person.age= 18;
+//    person.sex= "nv";
+//    person.hobby=function(){
+//        console.log("上天")
+//    };
+//    person.hobby=function(){
+//        console.log("游戏")
+//    }
+//    console.log(person.name)
+//    person.hobby()
+
+    //function personsum(name,age,sex){
+    //    var person=new Object()
+    //    person.name=name;
+    //    person.age=age;
+    //    person.sex=sex;
+    //    person.hobby=function(){
+    //        console.log("wanwan")
+    //    }
+    //    person.strong = function(){
+    //        console.log("游戏")
+    //    }
+    //    return person
+    //}
+    //var leier=personsum("leier","18","nv")
+    //    console.log(leier)
+    //
+    ////    console.log(leier)
+    //    console.log(personsum("leier","18","nv"))
+
+
+//
+//    function Personsum(name,age,sex){
+//        this.name=name;
+//        this.age=age;
+//        this.sex=sex;
+//        this.hobby=function(){
+//            console.log("上树")
+//        }
+//        this.strong=function(){
+//            console.log("游戏")
+//        }
+//        this.zzzz=function(){
+//            console.log(this)
+//        }
+//    }
+//    var leier=new Personsum("leier","18","nv")
+//    console.log(leier)
+//    leier.zzzz()
+
+// 预解析
+//    f1();
+//     function f1() {
+//       console.log('hello');
+//     }
+//
+//    function f1() {
+//        console.log('hello');
+//    }
+//    f1();
+//     var a = 25;
+//     function abc() {
+//       alert(a);
+//       var a = 10;
+//     }
+//     abc();
+//
+//    var a;
+
+//    function abc() {
+//        var a
+//        alert(a);
+//        a = 10;
+//    }
+//    a=25;
+//    abc();
+
+
+//
+//     console.log(a);
+//     function a() {
+//       console.log('aaaaa');
+//     }
+//     var a = 1;
+//     console.log(a);
+//
+//
+//    var a;
+//    function a() {
+//        console.log('aaaaa');
+//    }
+//    console.log(a);
+//    a=1;
+//    console.log(a);
+
+//     var num = 10;
+//    fun();
+//    function fun() {
+//        console.log(num);
+//        var num = 20;
+//    }
+
+//    var num;
+//    function fun() {
+//        var num
+//        console.log(num);
+//        num = 20;
+//    }
+//    num=10;
+//    fun()
+//
+//
+//     var a = 18;
+//    f1();
+//    function f1() {
+//        var b = 9;
+//        console.log(a);
+//        console.log(b);
+//        var a = '123';
+//    }
+//
+//    var a
+//    function f1() {
+//        var b
+//        var a
+//        console.log(a);
+//        b = 9;
+//        console.log(b);
+//        a = '123';
+//    }
+//    a=18;
+//    f1();
+
+
+//    function f1() {
+//        var a;
+//        a = b = c = 9;
+//        console.log(a);
+//        console.log(b);
+//        console.log(c);
+//    }
+//    f1();
+//    console.log(c);
+//    console.log(b);
+//    console.log(a);
+//
+
+
+//
+//    function f1() {
+//        var a=9;
+//         b = 9;
+//        c = 9;
+//        console.log(a);
+//        console.log(b);
+//        console.log(c);
+//    }
+//    f1();
+//    console.log(c);
+//    console.log(b);
+//    console.log(a);
+//
+//    var person={
+//             name:"leier",
+//             age: 18,
+//             sex: "nv",
+//             hobby:function(){
+//                 console.log("上树")
+//             },
+//             strong:function(){
+//                 console.log("游戏")
+//             }
+//         }
+//    for(var key in person){
+//        person=person+key+':'+person[key]+'||';
+//    }
+//    console.log(person);
+
+
+
+
+</script>
+</body>
+</html>
